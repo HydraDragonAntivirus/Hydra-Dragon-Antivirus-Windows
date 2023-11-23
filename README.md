@@ -11,3 +11,4 @@ Hydra Dragon Antivirus — 19.08.2023 16:36
 https://mega.nz/file/ytJigITQ#kbxcMQ6eDqyP4w-ITVE1uq5JNRy84l_N0G-KBxchu40 free database which includes clamav database too you can use this in this project! https://github.com/Divested-Mobile/Hypatia
 Hydra Dragon Antivirus — bugün saat 11:17
 https://mega.nz/file/SohH0ZpI#INGBw3_6X9Vu1L1z_mBVGDQ5qG_MwzPAZun2zktfys8 windows python code for run clamav and other databases linux version is coming this project is not going to continue
+Hydra Dragon Deep Malware Analysis https://mega.nz/file/ztoDDBhZ#5sfXZoehKk7TyuMRbaU8vIjyO_tTy9J1AmtEhdfpZOw
